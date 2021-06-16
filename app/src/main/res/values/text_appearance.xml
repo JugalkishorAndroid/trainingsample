@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
+<resources>
+
+    <!-- region Presentation Theme-->
+    <style name="TextAppearance.CodeLab.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/futura_bold</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/futura_bold</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/futura_bold</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/futura_heavy</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/futura_heavy</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/futura_heavy</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/futura_medium</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/futura_medium</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/futura_book</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/futura_book</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/futura_medium</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Button2" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/futura_medium</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/futura_heavy</item>
+    </style>
+
+    <style name="TextAppearance.CodeLab.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/futura_bold_oblique</item>
+    </style>
+    <!-- endregion -->
+
+</resources>

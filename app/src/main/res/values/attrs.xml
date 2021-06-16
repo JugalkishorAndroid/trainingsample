@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Material attribute for emphasis -->
+    <attr name="alphaEmphasisHigh" format="float" />
+    <attr name="alphaEmphasisMedium" format="float" />
+    <attr name="alphaEmphasisDisabled" format="float" />
+
+    <!-- Bottom navigation size attribute -->
+    <attr name="bottomNavigationSize" format="dimension" />
+
+    <!-- Status bat size attribute -->
+    <attr name="statusBarSize" format="dimension" />
+
+
+</resources>

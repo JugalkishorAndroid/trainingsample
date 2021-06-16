@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Sample Demo</string>
+
+    <string name="error_generic">An error occurred</string>
+
+    <string name="main_people_list_title">People</string>
+
+    <string name="people_details_email_template"><annotation font="futura_bold">Email:</annotation> %s</string>
+    <string name="people_details_user_id_template"><annotation font="futura_bold">User Id:</annotation> %s</string>
+    <string name="people_details_company_detail_template"><annotation font="futura_bold">Company Detail:</annotation> %s</string>
+    <string name="people_details_timer_template"><annotation font="futura_bold">Timer:</annotation> %s</string>
+    <string name="no_internet_connection">Check your internet connection !</string>
+
+</resources>

@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- Main Activity Style -->
+    <style name="TrainingLab.DayNight.Main" parent="TrainingLab.DayNight">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+
+    <!--Bottom Sheets-->
+    <style name="ThemeOverlay.TrainingLab.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.CodeLab.BottomSheet.Modal
+        </item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/Widget.TrainingLab.BottomSheet.Modal</item>
+        <item name="android:navigationBarColor">?colorSurface</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">
+            @android:color/transparent
+        </item>
+    </style>
+
+    <style name="Widget.TrainingLab.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceLargeComponent</item>
+    </style>
+
+    <style name="Widget.TrainingLab.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/color_surface</item>
+        <item name="android:backgroundTint">@color/color_surface</item>
+        <item name="titleTextColor">@color/color_on_surface</item>
+    </style>
+
+</resources>

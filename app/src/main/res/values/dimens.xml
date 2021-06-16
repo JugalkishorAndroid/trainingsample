@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- High emphasis of 87% for type. -->
+    <dimen name="alpha_emphasis_high">0.87</dimen>
+    <!-- Medium emphasis of 60% is the same for type and icon. -->
+    <dimen name="alpha_emphasis_medium">0.6</dimen>
+    <!-- Disabled emphasis of 38% is the same for type and icon. -->
+    <dimen name="alpha_emphasis_disabled">0.38</dimen>
+
+    <!-- Height of BottomNavigationBar-->
+    <dimen name="bottom_navigation_size">56dp</dimen>
+
+    <!-- Height of BottomNavigationBar-->
+    <dimen name="status_bar_size">24dp</dimen>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/people_list_fragment">
+
+    <fragment
+        android:id="@+id/people_list_fragment"
+        android:name="com.jugal.trainingsample.app.ui.main.fragment.PeopleListFragment"
+        android:label="fragment_people_list"
+        app:startDestination="@id/action_people_list_fragment_to_people_details_fragment"
+        tools:layout="@layout/fragment_people_list">
+        <action
+            android:id="@+id/action_people_list_fragment_to_people_details_fragment"
+            app:destination="@id/people_details_fragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/people_details_fragment"
+        android:name="com.jugal.trainingsample.app.ui.main.fragment.PeopleDetailsFragment"
+        android:label="fragment_people_details"
+        tools:layout="@layout/fragment_people_details" />
+</navigation>
