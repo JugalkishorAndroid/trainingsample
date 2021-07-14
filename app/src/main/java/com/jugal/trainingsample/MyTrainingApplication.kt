@@ -1,4 +1,3 @@
-@file:Suppress("unused")
 package com.jugal.trainingsample
 
 import android.app.Application

@@ -51,7 +51,7 @@ ext {
 
     // region Networking
     retrofit_version = '2.9.0'
-    okhttp_version = '4.9.0'
+    okhttp_version = '4.2.2'
     glide_version = '4.11.0'
     // endregion
 

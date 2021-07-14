@@ -26,7 +26,7 @@ class PeopleListFragment : Fragment(), PeoplesListAdapter.OnItemClickListener {
     private val viewModel by viewModel<PeopleViewModel>()
     private lateinit var peopleListAdapter: PeoplesListAdapter
     private var peoplesList: MutableList<PeopleRemote>? = mutableListOf()
-    private var pageSize = 6
+    private var pageSize = 10
     private var page: Int = 1
     private var loading: Boolean = false
     private var nextUrl: Boolean = true
@@ -102,17 +102,18 @@ class PeopleListFragment : Fragment(), PeoplesListAdapter.OnItemClickListener {
 
     private fun subscribeToPeopleList() {
         if (MyTrainingApplication.isNetworkConnected()) {
-            viewModel.getPeoplesList(page, pageSize).observe(viewLifecycleOwner) {
+            viewModel.getPeoplesList(page, pageSize).observe(viewLifecycleOwner) {peopleListData ->
                 loading = false
-                if (it.peopleList.size == pageSize) {
+                if (peopleListData.peopleList.size == pageSize) {
                     page += 1
                     nextUrl = true
                 } else
                     nextUrl = false
 
-                it.peopleList.forEach { people ->
+                Log.d("peopleListData","______"+peopleListData.toString())
+                peopleListData.peopleList.forEach { people ->
                     if (!peoplesList?.contains(people)!!) {
-                        peoplesList?.addAll(it.peopleList)
+                        peoplesList?.addAll(peopleListData.peopleList)
                     }
                 }
 
@@ -126,7 +127,7 @@ class PeopleListFragment : Fragment(), PeoplesListAdapter.OnItemClickListener {
             nextUrl = false
             hideSwipeToRefresh()
             viewModel.getPeopleListOffline { peopleList ->
-                Log.e("people", "soze___" + peopleList.size)
+                Log.e("people", "size___" + peopleList.size)
                 peopleList.forEach {
                     peoplesList?.add(
                         PeopleRemote(

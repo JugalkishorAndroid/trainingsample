@@ -11,4 +11,10 @@ interface PeoplesDao {
     @Query("SELECT * FROM peoples")
     fun getAll(): List<Peoples>
 
+    @Query("DELETE from peoples WHERE id = :peopleId")
+    suspend fun deletePeople(peopleId: Int)
+
+    @Query("DELETE FROM peoples")
+    suspend fun deleteAllPeopleList()
+
 }

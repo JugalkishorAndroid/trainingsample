@@ -1,7 +1,7 @@
 package com.jugal.trainingsample.di
 
 import com.jugal.trainingsample.app.viewmodel.PeopleViewModel
-import com.jugal.trainingsample.data.db.GeIdeaDatabase
+import com.jugal.trainingsample.data.db.TrainingDatabase
 import com.jugal.trainingsample.data.networking.api.PeopleApi
 import com.jugal.trainingsample.data.repository.PeopleRepository
 import okhttp3.OkHttpClient
@@ -23,8 +23,8 @@ val VIEW_MODEL_MODULE = module {
 }
 
 val DB_MODULE = module {
-    single { GeIdeaDatabase.create(androidContext()) }
-    single { get<GeIdeaDatabase>().peoplesDao() }
+    single { TrainingDatabase.create(androidContext()) }
+    single { get<TrainingDatabase>().peoplesDao() }
 }
 
 val NETWORKING_MODULE = module {

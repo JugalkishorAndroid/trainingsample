@@ -11,10 +11,12 @@
         android:allowBackup="false"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/TrainingLab.DayNight">
+
         <activity android:name=".app.MainActivity"
             android:theme="@style/TrainingLab.DayNight.Main">
             <intent-filter>

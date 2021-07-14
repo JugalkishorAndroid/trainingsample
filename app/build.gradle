@@ -20,6 +20,11 @@ android {
     }
 
     buildTypes {
+        mockup {
+            debuggable true
+            testBuildType "mockup"
+            signingConfig signingConfigs.debug
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -37,18 +42,12 @@ android {
         exclude 'META-INF/ASL2.0'
         exclude 'META-INF/AL2.0'
     }
+    useLibrary 'android.test.mock'
 }
 
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    /*implementation 'androidx.core:core-ktx:1.5.0'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'*/
 
     implementation 'androidx.core:core-ktx:1.5.0'
     implementation "androidx.appcompat:appcompat:$appcompat_version"
@@ -101,4 +100,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     //endregion
+
+
 }

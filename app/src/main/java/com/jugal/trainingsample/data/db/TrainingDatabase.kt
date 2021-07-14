@@ -12,14 +12,14 @@ import com.jugal.trainingsample.data.db.schema.Peoples
         Peoples::class
     ], version = 1, exportSchema = true
 )
-abstract class GeIdeaDatabase : RoomDatabase() {
+abstract class TrainingDatabase : RoomDatabase() {
     abstract fun peoplesDao(): PeoplesDao
 
 
     companion object Factory {
         private const val DATABASE_NAME = "ge_idea_.db"
-        fun create(c: Context): GeIdeaDatabase =
-            Room.databaseBuilder(c, GeIdeaDatabase::class.java, DATABASE_NAME).build()
+        fun create(c: Context): TrainingDatabase =
+            Room.databaseBuilder(c, TrainingDatabase::class.java, DATABASE_NAME).build()
     }
 
 }
